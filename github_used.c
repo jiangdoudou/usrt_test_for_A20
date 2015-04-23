@@ -33,5 +33,14 @@ $  git remote add origin git@github.com:jiangdoudou/test.git  //必须先在gith
 $  git push -u origin master //向github 推送
 
 
+
+//git branch  此处githubused 分支时增加！！！！！
 //向github  提交分支
 
+
+
+$ git branch xxxx //xxxx表示分支名
+$ git checkout xxxx //切换分支到xxxx
+
+
+$ git branch//直接输入git branch，不加任何后续参数，就表示让git列出所有已存在的分支

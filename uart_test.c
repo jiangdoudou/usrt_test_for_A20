@@ -5,6 +5,7 @@
 * time 2015-04-07
 */
 
+//jiangdou   #################
 /*test by */
 #include <stdio.h>
 #include <string.h>
@@ -15,6 +16,8 @@
 #include <unistd.h>
 #include <termios.h>
 #include <stdlib.h>
+
+
 
 /*´ò¿ª´®¿Ú*/
 int open_port(int fd,int comport)
