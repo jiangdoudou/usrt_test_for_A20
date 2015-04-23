@@ -48,3 +48,5 @@ $ git checkout xxxx //切换分支到xxxx
 
 
 $ git branch//直接输入git branch，不加任何后续参数，就表示让git列出所有已存在的分支
+
+$ git push origin githubused   //githubused 为分支名
