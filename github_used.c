@@ -16,7 +16,11 @@ $ ssh -T git@github.com
 //配置本地GIT
 $ git config --global user.name "your name"  
 $ git config --global user.email "your_email@youremail.com"  
-
+//获取Git配置信息，执行以下命令
+git config --list
+//以下命令会为终端配置高亮
+git config --global color.status auto
+git config --global color.branch auto
 
 
 
