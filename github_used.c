@@ -50,3 +50,25 @@ $ git checkout xxxx //切换分支到xxxx
 $ git branch//直接输入git branch，不加任何后续参数，就表示让git列出所有已存在的分支
 
 $ git push origin githubused   //githubused 为分支名
+
+
+
+
+
+//#################################################################################
+//×××××××××××××××××××××××××××××本地更新，提交分支×××××××××××××××××××××××××××××××××××××
+//提交分支
+将user1/getopt分支合并到主线
+
+(1),为将分支合并到主线，首先user1将工作区切换到主线,master分支.
+
+[root@localhost src]# git checkout master
+切换到分支 'master'
+(2)然后执行git merge命令以合并user1/getopt 分支.
+
+[root@localhost src]# git merge user1/getopt
+更新 d901dd8..733dcf6
+(3)本次合并非常顺利，实际上合并后master分支和user1/getopt指向同一个提交 ,这是因为合并前的master的提交就是user/getopt分支的父提交,所以此次合并相当于将分支master重置到user1/getopt分支
+
+[root@localhost src]# git rev-parse user1/getopt master
+733dcf67eba976a61d0dc6396c9d23cb23568591
