@@ -31,6 +31,7 @@ $  cd test     //进入目录
 $  git init    //创建./.git
 $  vi  README
 $  git add README  //向git增加文件或者目录
+$  git add xx/  //add 目录，不能少“/”
 $  git commit -m 'first commit'  //向local./.git 提交
 $  git remote add origin git@github.com:jiangdoudou/test.git  //必须先在github创建“Repositories”!!
 //git remote -v  //git remote add xxxx  ->xxxx表示分支名
