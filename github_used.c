@@ -81,3 +81,8 @@ $ git commit -m "add test.txt"
 
 [root@localhost src]# git rev-parse user1/getopt master
 733dcf67eba976a61d0dc6396c9d23cb23568591
+
+//=========================github提交大于100MB文件错误时==================================
+//remote: error: File binaries/debian-server-rootfs.tar.gz is 235.00 MB; this exceeds GitHub's file size limit of 100.00 MB
+
+$ git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch binaries/debian-server-rootfs.tar.gz" -- --all
