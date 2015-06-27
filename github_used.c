@@ -52,7 +52,15 @@ $ git branch//直接输入git branch，不加任何后续参数，就表示让gi
 
 $ git push origin githubused   //githubused 为分支名
 
+//#################################################################################
+//×××××××××××××××××××××××××××××删除文件并提交×××××××××××××××××××××××××××××××××××××
+在Git中，删除也是一个修改操作，我们实战一下，先添加一个新文件test.txt到Git并且提交：
 
+$ git add test.txt
+$ git commit -m "add test.txt"
+[master 94cdc44] add test.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
 
 
 
