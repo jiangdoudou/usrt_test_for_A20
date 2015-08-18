@@ -38,6 +38,13 @@ $  git remote add origin git@github.com:jiangdoudou/test.git  //必须先在gith
 $  git push -u origin master //向github 推送
 
 
+//要为本地分支设定不同于远程分支的名字，只需在前个版本的命令里换个名字：
+
+$ git checkout -b new_local_branch_name origin/serverfix
+
+
+
+
 
 //git branch  此处githubused 分支时增加！！！！！
 //向github  提交分支
